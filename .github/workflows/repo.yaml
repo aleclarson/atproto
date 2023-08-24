@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: "yarn"
+          cache: 'yarn'
       - run: yarn install --frozen-lockfile
       - run: yarn build
   test:
@@ -28,7 +28,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: "yarn"
+          cache: 'yarn'
       - run: yarn install --frozen-lockfile
       - run: yarn test:withFlags --maxWorkers=1 --shard=${{ matrix.shard }} --passWithNoTests
   verify:
@@ -38,6 +38,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: "yarn"
+          cache: 'yarn'
       - run: yarn install --frozen-lockfile
       - run: yarn verify

@@ -28,7 +28,7 @@ You can run benchmarks with `yarn bench`.
 ### Attaching a profiler
 
 Running `yarn bench:profile` will launch `bench` with `--inspect-brk` flag.
-Execution will be paused until a debugger is attached, you can read more 
+Execution will be paused until a debugger is attached, you can read more
 about node debuggers [here](https://nodejs.org/en/docs/guides/debugging-getting-started#inspector-clients)
 
 An easy way to profile is:

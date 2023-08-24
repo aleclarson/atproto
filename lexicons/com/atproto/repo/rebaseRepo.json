@@ -24,10 +24,7 @@
           }
         }
       },
-      "errors": [
-        {"name": "InvalidSwap"},
-        {"name": "ConcurrentWrites"}
-      ]
+      "errors": [{ "name": "InvalidSwap" }, { "name": "ConcurrentWrites" }]
     }
   }
 }
