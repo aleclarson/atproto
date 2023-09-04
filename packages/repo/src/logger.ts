@@ -1,5 +1,5 @@
-import { subsystemLogger } from '@atproto/common'
+import { subsystemLogger, Logger } from '@atproto/common'
 
-export const logger = subsystemLogger('repo')
+export const logger: Logger = subsystemLogger('repo')
 
 export default logger

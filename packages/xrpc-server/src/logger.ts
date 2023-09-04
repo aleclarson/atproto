@@ -1,5 +1,5 @@
-import { subsystemLogger } from '@atproto/common'
+import { subsystemLogger, Logger } from '@atproto/common'
 
-export const logger = subsystemLogger('xrpc-server')
+export const logger: Logger = subsystemLogger('xrpc-server')
 
 export default logger

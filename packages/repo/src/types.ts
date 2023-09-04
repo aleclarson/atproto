@@ -51,8 +51,9 @@ export const schema = {
   versionedCommit,
 }
 
-export const def = {
-  ...commonDef,
+type Def = typeof import('@atproto/common').def & typeof repoDef
+
+const repoDef = {
   commit: {
     name: 'commit',
     schema: schema.commit,
@@ -61,6 +62,11 @@ export const def = {
     name: 'versioned_commit',
     schema: schema.versionedCommit,
   },
+}
+
+export const def: Def = {
+  ...commonDef,
+  ...repoDef,
 }
 
 // Repo Operations

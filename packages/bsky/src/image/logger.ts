@@ -1,5 +1,5 @@
-import { subsystemLogger } from '@atproto/common'
+import { subsystemLogger, Logger } from '@atproto/common'
 
-export const logger = subsystemLogger('bsky:image')
+export const logger: Logger = subsystemLogger('bsky:image')
 
 export default logger
